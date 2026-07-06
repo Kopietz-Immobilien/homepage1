@@ -37,6 +37,12 @@
   footer .inner{max-width:var(--maxw);margin:0 auto;padding:34px 24px;display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center;font-size:.88rem;color:var(--muted-light)}
   footer a{color:var(--ink-text)}
   @media(max-width:560px){h1{font-size:2rem}.wrap{padding:46px 20px 70px}}
+
+/* === MOBILE-FIX (nur Handy): feste Breite, kein Seitwaerts-Scrollen === */
+@media (max-width:960px){
+  html,body{max-width:100%!important;overflow-x:hidden!important}
+  .topbar .inner{flex-wrap:wrap!important;gap:8px!important}
+}
 </style>
 </head>
 <body>
