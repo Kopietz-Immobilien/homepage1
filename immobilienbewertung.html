@@ -444,28 +444,33 @@
 @media (max-width:960px){
   html,body{max-width:100%!important;overflow-x:hidden!important}
 
-  /* Kopf: Logo groesser + eigene Zeile; Button + Menue darunter, links am Logo */
-  .nav{justify-content:flex-start!important;align-items:center!important;gap:10px!important;flex-wrap:wrap!important}
-  .brand{flex:0 0 100%!important}
-  .brand-logo{height:90px!important;width:auto!important;max-width:240px!important;margin-left:0!important}
-  .nav-right{flex:0 0 100%!important}
-  .nav-bottom{gap:14px!important;flex-wrap:nowrap!important;justify-content:flex-start!important}
-  .header-cta{margin-left:0!important;gap:12px!important}
-  .hdr-btn{min-width:0!important;padding:11px 18px!important;white-space:nowrap!important}
+  /* Kopf: Logo GROSS + links, Kontakt-Button + Menue direkt rechts daneben */
+  .nav{flex-wrap:nowrap!important;justify-content:space-between!important;align-items:center!important;gap:8px!important}
+  .brand{flex:0 1 auto!important;min-width:0!important;margin:0!important}
+  .brand-logo{height:auto!important;width:auto!important;max-height:104px!important;max-width:52vw!important;margin:0!important}
+  .nav-right{flex:0 0 auto!important;width:auto!important;align-items:center!important}
+  .nav-bottom{gap:8px!important;flex-wrap:nowrap!important;justify-content:flex-end!important}
+  .header-cta{margin-left:0!important;gap:8px!important}
+  .hdr-btn{min-width:0!important;padding:9px 13px!important;font-size:.8rem!important;white-space:nowrap!important}
   .burger{flex:0 0 auto;margin:0!important}
+  .hero{padding-top:122px!important}
 
-  /* Footer: Logo linksbuendig, schoen ueber den Links */
+  /* Footer: Logo gross + linksbuendig ueber den Links */
   .foot-grid > div:first-child{text-align:left!important}
   .foot-grid > div:first-child .brand{justify-content:flex-start!important}
   .foot-grid > div:first-child p{margin-left:0!important;margin-right:0!important}
   .foot-grid > div:first-child .social-links{justify-content:flex-start!important}
-  .foot-logo{height:auto!important;max-width:200px!important;margin-left:0!important;margin-right:auto!important;margin-top:0!important;margin-bottom:8px!important}
+  .foot-logo{height:auto!important;width:auto!important;max-width:300px!important;margin-left:0!important;margin-right:auto!important;margin-top:0!important;margin-bottom:10px!important}
 
-  /* Ueber mich: Text -> Foto -> Namenszug */
+  /* Ueber mich: Text -> Foto (dicht darunter) -> Namenszug (direkt unter Foto) */
+  .about-grid{gap:0!important}
   .about-text{order:1}
-  .about-photo{order:2;margin-top:8px}
+  .about-photo{order:2;margin-top:14px!important}
   .about-text .sign{display:none!important}
-  .sign-mob{display:block!important;order:3;text-align:left!important;margin-top:14px!important}
+  .sign-mob{display:block!important;order:3;text-align:left!important;margin-top:6px!important}
+
+  /* FAQ: etwas mehr Abstand zum Bildschirmrand */
+  #faq .container{padding-left:24px!important;padding-right:24px!important}
 }
 </style>
 </head>
